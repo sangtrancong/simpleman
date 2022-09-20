@@ -18,7 +18,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="video_url">Link Video</label>
+            <label for="video_url">Youtube Video Id</label>
             <input type="text" class="form-control" id="video_url" value="{{ old('video_url') }}" name="video_url">
             @error('video_url')
                 <div class="text-danger">{{ $message }}</div>
