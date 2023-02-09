@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/admin/jquery.dataTables.min.css" />
     <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="/css/admin/style.css" />
-   
+
     <style>
         body {
             font-family: "Lato", sans-serif;
@@ -19,14 +19,33 @@
 <body>
 
     <div class="sidenav">
+
+        @if (session('adminSession')[0]['role']===1)
         <a href="/admin/account">Tài khoản</a>
+        @endif
         <a href="/admin/category">Danh mục</a>
         <a href="/admin/product">Sản phẩm</a>
         <a href="/admin/port">Bài viết</a>
         <a href="/admin/portRef">Bài viết liên kết</a>
+        @if (session('adminSession')[0]['role']===1)
         <a href="/admin/report">Số lượt truy cập</a>
-    </div>
+        @endif
 
+    </div>
+    <div class="logout-container">
+        <div class="btn-group " style="position: absolute;
+        right: 10px;
+        top: 5px;">
+            <button type="button" class="btn btn-violet dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Xin chào {{session('adminSession')[0]['username']}}
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" type="button" href="/admin/account/accountPage">Trang cá nhân</a>
+              <a class="dropdown-item" type="button" href="/admin/account/changePass">Đổi mật khẩu</a>
+              <a href="/logout" class="dropdown-item" type="button">Đăng xuất</a>
+            </div>
+          </div>
+    </div>
     <div class="main">
         @yield('content')
 
@@ -39,7 +58,7 @@
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
     <script src="/js/style.js"></script>
     <script src="/js/style-admin.js"></script>
-   
+
     @yield('script')
 </body>
 

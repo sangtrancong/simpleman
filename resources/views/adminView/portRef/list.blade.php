@@ -1,15 +1,12 @@
 @extends('layout.admin')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-4">
-            <h2>Bài viết liên kết</h2>
-        </div>
-        <div class="col-lg-2 offset-lg-6">
-            <a class="btn btn-primary" href="/admin/portRef/create">Thêm bài viết</a>
+
+        <div style="display: flex; justify-content: space-between">
+            <h2>Bài viết</h2>
+           <a class="btn btn-violet" href="/admin/category/create">Thêm bài viết</a>
         </div>
 
-    </div>
 
     <hr>
     <table id="datatable" class="display">

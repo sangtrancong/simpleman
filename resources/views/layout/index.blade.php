@@ -20,7 +20,7 @@
             <span><img width="50%" src="/images/logo.jpg" /></span>
         </div>
         <div>
-            <input style="width: 500px" placeholder="Bạn muốn tìm gì" class="form-control" id="search"
+            <input style="width: 500px" placeholder="Search" class="form-control" id="search"
                 name="search" />
             <div id="autocomplete" class="autocomplete">
             </div>

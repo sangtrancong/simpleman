@@ -14,13 +14,17 @@ class AuthenticationController extends Controller
     public function postLogin(Request $request){
         $username = $request ->username;
         $pass=$request ->password;
-        $account =Account::where('username',$username)->first();
+        $account =Account::where(['username'=>$username])->first();
         if($account!=null && Hash::check($pass, $account->password)) {
+            if($account->status===1){
                 request()->session()->invalidate();
                 request()->session()->push('adminSession',$account);
                 return redirect('/admin/product');
+            }
+            else return back()->with('loginfail','Tài khoản đã bị khóa!');
+
         }
-        else return back()->with('loginfail','Email or password incorrect!');
+        else return back()->with('loginfail','Email hoặc mật khẩu không chính xác!');
     }
     public function logout(){
         request()->session()->invalidate();

@@ -3,7 +3,7 @@
 @section('content')
 <div style="display: flex; justify-content: space-between">
     <h2>Danh mục sản phẩm</h2>
-   <a class="btn btn-primary" href="/admin/category/create">Thêm danh mục</a>
+   <a class="btn btn-violet" href="/admin/category/create">Thêm danh mục</a>
 </div>
 
 <hr>
@@ -31,7 +31,9 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <button class="dropdown-item" onclick="location.href='/admin/category/{{$item->id}}'" type="button">Chỉnh sửa</button>
+                      @if (session('adminSession')[0]['role']===1)
                       <button class="dropdown-item" type="button">Xóa</button>
+                      @endif
                     </div>
                   </div>
             </td>

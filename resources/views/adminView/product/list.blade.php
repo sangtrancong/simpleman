@@ -1,16 +1,10 @@
 @extends('layout.admin')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-4">
-            <h2>Danh sách sản phẩm</h2>
-        </div>
-        <div class="col-lg-2 offset-lg-6">
-            <a class="btn btn-primary" href="/admin/product/create">Thêm sản phẩm</a>
-        </div>
-
-    </div>
-
+<div style="display: flex; justify-content: space-between">
+    <h2>Sản phẩm</h2>
+   <a class="btn btn-violet" href="/admin/category/create">Thêm sản phẩm</a>
+</div>
     <hr>
     <table id="datatable" class="display">
         <thead>
@@ -50,7 +44,10 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item" onclick="location.href='/admin/product/{{ $item->id }}'"
                                     type="button">Chỉnh sửa</button>
-                                <a class="dropdown-item" onclick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này?')" href="/admin/product/{{$item->id}}/edit">Xóa</a>
+                                    @if (session('adminSession')[0]['role']===1)
+                                    <a class="dropdown-item" onclick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này?')" href="/admin/product/{{$item->id}}/edit">Xóa</a>
+
+                                    @endif
                             </div>
                         </div>
                     </td>
