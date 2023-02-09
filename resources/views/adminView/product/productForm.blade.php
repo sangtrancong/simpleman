@@ -65,6 +65,6 @@
         </div>
 
 
-        <button type="submit" class="btn btn-primary">Chỉnh sửa</button>
+        <button type="submit" class="btn btn-violet">Chỉnh sửa</button>
     </form>
 @endsection

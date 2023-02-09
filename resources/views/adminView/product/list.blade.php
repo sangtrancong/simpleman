@@ -3,7 +3,7 @@
 @section('content')
 <div style="display: flex; justify-content: space-between">
     <h2>Sản phẩm</h2>
-   <a class="btn btn-violet" href="/admin/category/create">Thêm sản phẩm</a>
+   <a class="btn btn-violet" href="/admin/product/create">Thêm sản phẩm</a>
 </div>
     <hr>
     <table id="datatable" class="display">

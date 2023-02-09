@@ -23,6 +23,6 @@
         <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="3">{{$category->description}}</textarea>
       </div>
 
-    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <button type="submit" class="btn btn-violet">Cập nhật</button>
   </form>
 @endsection

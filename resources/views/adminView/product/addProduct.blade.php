@@ -56,6 +56,6 @@
         </div>
 
 
-        <button type="submit" class="btn btn-primary">Thêm</button>
+        <button type="submit" class="btn btn-violet">Thêm</button>
     </form>
 @endsection
