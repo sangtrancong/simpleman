@@ -1,5 +1,5 @@
 @extends('layout.index')
-@section('title', 'Giới thiệu')
+@section('title', 'About')
 @section('content')
     <div class="top-space">
 
@@ -16,41 +16,42 @@
                             <div class="col-sm-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><span><i class="fa fa-user"></i></span></span>
+                                        <span class="input-group-text"><span><i class="fa fa-user"></i></span></span>
                                     </div>
-                                    <input type="text" disabled class="form-control" value="SimpleMan Group">
+                                    <input type="text" disabled class="form-control" value="SimplemanPlus Group">
 
-                                  </div>
-                                  <div class="input-group mb-3">
+                                </div>
+                                <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><span><i class="fa fa-phone"></i></span></span>
+                                        <span class="input-group-text"><span><i class="fa fa-phone"></i></span></span>
                                     </div>
-                                    <input type="text" disabled class="form-control" value="0963 262  036">
-                                  </div>
+                                    <input type="text" disabled class="form-control" value="+84 963 262 036">
+                                </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><span><i class="fa fa fa-envelope"></i></span></span>
+                                        <span class="input-group-text"><span><i class="fa fa fa-envelope"></i></span></span>
                                     </div>
                                     <input type="text" disabled class="form-control" value="simplemanplusvn@gmail.com">
-                                  </div>
-                                  <div class="input-group mb-3">
+                                </div>
+                                <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><span><i class="fa fa-map-marker"></i></span></span>
+                                        <span class="input-group-text"><span><i class="fa fa-map-marker"></i></span></span>
                                     </div>
-                                    <input type="text" disabled class="form-control" value="503 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM">
-                                  </div>
+                                    <input type="text" disabled class="form-control"
+                                        value="503 Nam Ky Khoi Nghia Street, 3 District, HCM City">
+                                </div>
                             </div>
 
                         </div>
                         <div>
                             <div class="grid-icon-contact">
                                 <div class="icon-lg"><a target="_blank"
-                                    href="https://www.facebook.com/Hero-Dog-Stories-104413589062739/?ref=pages_you_manage"><i
+                                    href="#"><i
                                         class="fa fa-facebook" style="color: white"></i></a></div>
                                  <div class="icon-lg"><a target="_blank"
-                                    href="https://www.youtube.com/channel/UCPU8J1JVPuwYGU5azaS-XuA"><i
+                                    href="#"><i
                                         class=" fa fa-youtube" style="color: white"></i></a></div>
                             </div>
 

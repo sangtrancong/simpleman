@@ -32,19 +32,19 @@
     <!-- Top Navigation Menu mobile -->
     <nav id="navMobile" class="topnavMobile navFixed">
         <a class="active">
-            <input style="width: 300px;" placeholder="Bạn muốn tìm gì" class="form-control" id="search2"
+            <input style="width: 300px;" placeholder="Search" class="form-control" id="search2"
                 name="search" />
             {{-- <div id="autocomplete2" class="autocomplete">
             </div> --}}
         </a>
         <div id="myLinks">
-            <a href="/">Trang chủ</a>
-            <a href="/gioi-thieu">Giới thiệu</a>
-            <a href="/lien-he">Liên hệ</a>
-            <a href="/policy">Chính sách</a>
-            <a href="/suc-khoe">Sức khỏe</a>
-            <a href="/giao-duc">Giáo dục</a>
-            <a href="/san-pham">Sản phẩm</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/policy">Privacy Policy</a>
+            <a href="/health">Health</a>
+            <a href="/edu">Education</a>
+            <a href="/product">Product</a>
             <a href="/blog">Blog</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="showMenuMobile()">
@@ -55,25 +55,25 @@
     <nav id="navbarDesktop" class=" justify-content-center navbar navbar-expand-sm bg-info navbar-dark">
         <ul class="navbar-nav">
             <li class="nav-item ">
-                <a class="nav-link" href="/">Trang chủ</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/gioi-thieu">Giới thiệu</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/lien-he">Liên hệ</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/policy">Chính sách</a>
+                <a class="nav-link" href="/policy">Privacy Policy</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/suc-khoe">Sức khỏe</a>
+                <a class="nav-link" href="/health">Health</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/giao-duc">Giáo dục</a>
+                <a class="nav-link" href="/edu">Education</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/san-pham">Sản phẩm</a>
+                <a class="nav-link" href="/product">Product</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="/blog">Blog</a>
@@ -107,26 +107,31 @@
         <div class="footer ">
 
             <div>
-                <b>Thông tin</b>
-                <div><span><i class="fa fa-phone"></i></span> &nbsp; 0963 262 036</div>
+                <b>INFOMATION</b>
+                <div><span><i class="fa fa-phone"></i></span> &nbsp; +84 963 262 036</div>
                 <div><span><i class="fa fa-envelope "></i></span>&nbsp; <a style="color: white"
                         href="mailto:simplemanplusvn@gmail.com">simplemanplusvn@gmail.com</a></div>
-                <div><span><i class="fa fa-map-marker"></i></span> &nbsp;&nbsp; 503 Nam Kỳ Khởi Nghĩa, Quận 3, TP HCM </div>
+                <div><span><i class="fa fa-map-marker"></i></span> &nbsp;&nbsp; 503 Nam Ky Khoi Nghia Street, 3
+                    District, HCM City </div>
                 <div class="grid-icon">
                     <div class="icon"><a target="_blank"
                             href="https://www.facebook.com/Hero-Dog-Stories-104413589062739/?ref=pages_you_manage"><i
                                 class="fa fa-facebook"></i></a></div>
                     <div class="icon"><a target="_blank"
-                            href="https://www.youtube.com/channel/UCPU8J1JVPuwYGU5azaS-XuA"><i
+                            href="https://youtube.com/channel/UCrGb9CLSH-dpQr9t3-z1w9A"><i
                                 class="fa fa-youtube"></i></a></div>
-                    <div class="icon"><a target="_blank"><i class="fa fa-twitter"></i></a></div>
+                    <div class="icon"><a target="_blank" href="https://twitter.com/stories_dog"><i class="fa fa-twitter"  ></i></a></div>
                 </div>
-                <div>© Copyright - 2022, website made by AnimalStoriesPlus. All rights reserves</div>
+                <div>© Copyright - 2022, website made by SimplemanPlus. All rights reserves</div>
                 <div>
                 </div>
             </div>
             <div id="footer-col-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2658200165793!2d106.68034471428976!3d10.790941392311709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d350ac4adf%3A0xbd6f140b1c094793!2zNTAzIMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgMTQsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1663288303491!5m2!1svi!2s" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2658200165793!2d106.68034471428976!3d10.790941392311709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d350ac4adf%3A0xbd6f140b1c094793!2zNTAzIMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgMTQsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1663288303491!5m2!1svi!2s"
+                    width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 

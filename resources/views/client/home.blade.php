@@ -1,5 +1,5 @@
 @extends('layout.index')
-@section('title', 'Trang chủ')
+@section('title', 'Home')
 @section('content')
 
 
@@ -300,7 +300,7 @@
             </div>
             <div class="news container">
                 <hr>
-                <h1 class="text-center"><a href="/suc-khoe">SỨC KHỎE</a> </h1>
+                <h1 class="text-center" style="color: #600c8b">HEALTH</h1>
                 <br>
                 <div class="port-new-content">
                     <div class="row">
@@ -313,12 +313,12 @@
                         @endforeach
 
                     </div>
-                    <div> <a class="btn btn-violet" href="/suc-khoe">Xem thêm</a></div>
+                    <div> <a class="btn btn-violet" href="/health">Read more</a></div>
                 </div>
             </div>
             <div class="news container">
                 <hr>
-                <h1 class="text-center"><a href="/giao-duc"></a> GIÁO DỤC</h1>
+                <h1 class="text-center" style="color: #600c8b"><a href="/edu"></a> EDUCATION</h1>
                 <br>
                 <div class="port-new-content">
                     <div class="row">
@@ -331,7 +331,7 @@
                         @endforeach
 
                     </div>
-                    <div> <a class="btn btn-violet"  href="/giao-duc">Xem thêm</a></div>
+                    <div> <a class="btn btn-violet"  href="/edu">Read more</a></div>
                 </div>
             </div>
 

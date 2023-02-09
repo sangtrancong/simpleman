@@ -80,7 +80,7 @@ class AccountController extends Controller
     {
         $account=Account::find($id);
         if($account!=null){
-            $account->password=Hash::make('sangdeptrai');
+            $account->password=Hash::make('1234512345');
             $account->save();
         }
         return redirect("/admin/account");

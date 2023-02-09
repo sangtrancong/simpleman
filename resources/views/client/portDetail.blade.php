@@ -1,10 +1,30 @@
 @extends('layout.index')
-@section('title', 'Bài viết')
+@section('title')
+{{$port->title}}
+@endsection
 @section('meta')
-<meta property="og:title" content="{{$port->title}}" />
-<meta property="og:image" content="{{URL::to('/').'/storage/'.$port->image}}" />
-<meta property="og:description"
-  content="{{$port->short_content}}" />
+  <meta property="og:title" content="{{ $port->title }}" />
+  <meta property="og:url" content="{{config('hostserver.domain') . 'port/' . $port->slug}}"/>
+  <meta property="og:image" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:url" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}" />
+  <meta property="og:image:secure_url" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}" />
+  <meta property="og:description" content="{{ $port->short_content }}" />
+   <!-- Google+ / Schema.org -->
+<meta itemprop="name" content="{{ $port->title }}"/>
+<meta itemprop="headline" content="{{ $port->title }}"/>
+<meta itemprop="description" content="{{ $port->short_content }}"/>
+<meta itemprop="image" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}"/>
+<meta itemprop="datePublished" content="{{Carbon\Carbon::parse($port->created_at)->format('Y-m-d')}}"/>
+<meta itemprop="dateModified" content="{{$port->updated_at}}" />
+<meta itemprop="author" content="phunguyen"/>
+<!--<meta itemprop="publisher" content="Animals Nature Press"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="{{ $port->title }}" />
+  <meta property="twitter:image" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}" />
+  <meta property="twitter:image:url" content="{{ config('hostserver.domain') . 'storage/' . $port->image }}" />
+  <meta property="twitter:description" content="{{ $port->short_content }}" />
+  <link rel="canonical" href="{{config('hostserver.domain') . 'port/' . $port->slug}}" />
 @endsection
 @section('content')
 <div id="fb-root"></div>
@@ -17,18 +37,16 @@
                     <h3>{{$port->title}}</h3>
                     <i>
                         @php
-                        $diff= Carbon\Carbon::now()->diffInMinutes($port->updated_at);
-                                if ( $diff<60) {
-                                    echo $diff." minute ago";
-                                }
-                                else if ($diff>60 && $diff<60*24) {
-                                    $diff= Carbon\Carbon::now()->diffInHours($port->updated_at);
-                                    echo $diff." hours ago";
-                                }
-                                else {
-                                    $date=Carbon\Carbon::parse($port->updated_at)->format('m/d/Y H:i');
-                                    echo $date;
-                                }
+                            $diff = Carbon\Carbon::now()->diffInMinutes($port->updated_at);
+                            if ($diff < 60) {
+                                echo '<i class="fa fa-clock-o" aria-hidden="true"></i>  '. $diff . ' minute ago';
+                            } elseif ($diff > 60 && $diff < 60 * 24) {
+                                $diff = Carbon\Carbon::now()->diffInHours($port->updated_at);
+                                echo '<i class="fa fa-clock-o" aria-hidden="true"></i>  '. $diff . ' hours ago';
+                            } else {
+                                $date = Carbon\Carbon::parse($port->updated_at)->format('F d, Y');
+                                echo '<i class="fa fa-clock-o" aria-hidden="true"></i>  ' . $date;
+                            }
                         @endphp
                     </i>
 
@@ -43,6 +61,10 @@
                         {!! $port->content !!}
                     </div>
                     <div class="text-right">
+                        <a id="btnCoppy" style="margin-top: -8px; line-height: 1.3 !important;color: white" target="blank"
+                            href="https://twitter.com/intent/tweet?url={{ config('hostserver.domain') . 'port/' . $port->slug }}"
+                            class="btn btn-sm btn-primary" title="Coppy link"><i class="fa fa-twitter"></i>&nbsp;<b>
+                                Share</b> </a>
                         <div class="fb-share-button" data-href="{{Request::url()}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsss%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                         <button id="btnCoppy" style="margin-top: -7px" class="btn btn-sm btn-primary" title="Coppy link" onclick="copyText()"><i class="fa fa-copy"></i></button>
                     </div>

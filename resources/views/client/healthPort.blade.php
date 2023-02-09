@@ -1,5 +1,5 @@
 @extends('layout.index')
-@section('title', 'Bài viết')
+@section('title', 'Article')
 @section('content')
 
 {{-- <div style="background-color: rgb(206, 207 ,209); padding-bottom: 35px">
