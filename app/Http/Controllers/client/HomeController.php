@@ -74,9 +74,11 @@ class HomeController extends Controller
         try {
 
             $port=Port::where(['slug'=>$slug])->where('status','<>',0)->first();
+            visits($port)->increment();
+            $count=visits($port)->count();
             $categoryPort=$port->category_id;
             $portOther=Port::where(['category_id'=>$categoryPort])->where('status','<>',0)->where('id','<>',$port->id)->orderby('created_at','DESC')->limit(7)->get();
-            return view('client.portDetail')->with(['port'=>$port,'portOther'=>$portOther]);
+            return view('client.portDetail')->with(['port'=>$port,'portOther'=>$portOther,'count'=>$count]);
         } catch (\Throwable $th) {
             // report($th);
             // return false;

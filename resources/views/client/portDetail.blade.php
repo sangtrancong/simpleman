@@ -48,7 +48,8 @@
                                 echo '<i class="fa fa-clock-o" aria-hidden="true"></i>  ' . $date;
                             }
                         @endphp
-                    </i>
+                    </i> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-eye" aria-hidden="true"></i> {{$count}}
 
                     <hr>
                     @if ($port->video_url!=null)
