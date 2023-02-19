@@ -3,7 +3,7 @@
 @section('content')
 <div style="display: flex; justify-content: space-between">
     <h2>Bài viết</h2>
-   <a class="btn btn-violet" href="/admin/category/create">Thêm bài viết</a>
+   <a class="btn btn-violet" href="/admin/port/create">Thêm bài viết</a>
 </div>
 
     <hr>
