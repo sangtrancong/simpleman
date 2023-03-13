@@ -1,7 +1,7 @@
 <?php
 return [
-    'Giáo dục'=>1,
-    'Sức khỏe'=>2,
+    'Muscle Car'=>1,
+    'Classic Car'=>2,
     'Blog'=>3,
 ]
 ?>

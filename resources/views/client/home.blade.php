@@ -300,11 +300,11 @@
             </div>
             <div class="news container">
                 <hr>
-                <h1 class="text-center" style="color: #600c8b">HEALTH</h1>
+                <h1 class="text-center" style="color: #600c8b">MUSCLE CAR</h1>
                 <br>
                 <div class="port-new-content">
                     <div class="row">
-                        @foreach ($healthContent as $h)
+                        @foreach ($muscleContent as $h)
                         <div class="col-sm-6  port-new-item">
                             <h5 class="title-port"><a href="/port/{{$h->slug}}">{{$h->title}}</a></h5>
                             <article class="thumb"> <a href="/port/{{$h->slug}}"><img width="100%" style="max-width: 200px; min-height: 115px; float: left; padding-right: 15px" src="/storage/{{$h->image}}" alt=""></a></article>
@@ -313,16 +313,16 @@
                         @endforeach
 
                     </div>
-                    <div> <a class="btn btn-violet" href="/health">Read more</a></div>
+                    <div> <a class="btn btn-violet" href="/muscle-car">Read more</a></div>
                 </div>
             </div>
             <div class="news container">
                 <hr>
-                <h1 class="text-center" style="color: #600c8b"><a href="/edu"></a> EDUCATION</h1>
+                <h1 class="text-center" style="color: #600c8b"><a href="/classic-car"></a> CLASSIC CAR</h1>
                 <br>
                 <div class="port-new-content">
                     <div class="row">
-                        @foreach ($eduContent as $h)
+                        @foreach ($muscleContent as $h)
                         <div class="col-sm-6  port-new-item">
                             <h5 class="title-port"><a href="/port/{{$h->slug}}">{{$h->title}}</a></h5>
                             <article class="thumb"> <a href="/port/{{$h->slug}}"><img width="100%" style="max-width: 200px; min-height: 115px; float: left; padding-right: 15px" src="/storage/{{$h->image}}" alt=""></a></article>
@@ -331,7 +331,7 @@
                         @endforeach
 
                     </div>
-                    <div> <a class="btn btn-violet"  href="/edu">Read more</a></div>
+                    <div> <a class="btn btn-violet"  href="/classic-car">Read more</a></div>
                 </div>
             </div>
 

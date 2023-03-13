@@ -52,8 +52,8 @@
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <a href="/policy">Privacy Policy</a>
-            <a href="/health">Health</a>
-            <a href="/edu">Education</a>
+            <a href="/muscle-car">Muscle Car</a>
+            <a href="/classic-car">Classic Car</a>
             <a href="/product">Product</a>
             <a href="/blog">Blog</a>
         </div>
@@ -77,10 +77,10 @@
                 <a class="nav-link" href="/policy">Privacy Policy</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/health">Health</a>
+                <a class="nav-link" href="/muscle-car">Muscle Car</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="/edu">Education</a>
+                <a class="nav-link" href="/classic-car">Classic Car</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="/product">Product</a>
