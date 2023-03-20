@@ -49,7 +49,7 @@
                             }
                         @endphp
                     </i> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-eye" aria-hidden="true"></i> {{$count}}
+                    <i class="fa fa-eye" aria-hidden="true"></i> {{1003+99*$count}}
 
                     <hr>
                     @if ($port->video_url!=null)
