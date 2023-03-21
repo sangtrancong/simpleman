@@ -322,7 +322,7 @@
                 <br>
                 <div class="port-new-content">
                     <div class="row">
-                        @foreach ($muscleContent as $h)
+                        @foreach ($classicContent as $h)
                         <div class="col-sm-6  port-new-item">
                             <h5 class="title-port"><a href="/port/{{$h->slug}}">{{$h->title}}</a></h5>
                             <article class="thumb"> <a href="/port/{{$h->slug}}"><img width="100%" style="max-width: 200px; min-height: 115px; float: left; padding-right: 15px" src="/storage/{{$h->image}}" alt=""></a></article>
