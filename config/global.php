@@ -1,7 +1,7 @@
 <?php
 return [
-    'Muscle Car'=>1,
-    'Classic Car'=>2,
+    'MuscleCar'=>1,
+    'ClassicCar'=>2,
     'Blog'=>3,
 ]
 ?>

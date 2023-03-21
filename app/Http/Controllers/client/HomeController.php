@@ -45,8 +45,8 @@ class HomeController extends Controller
         $hotContent=Port::where('status','<>',0)->orderby('status','DESC')->orderby('updated_at','DESC')->limit(3)->get();
         $arrHotContent=$hotContent->pluck('id')->toArray();
         // dd($arrHotContent);
-        $muscleContent=Port::where('status','<>',0)->where('category_id',config('global.Muscle Car'))->whereNotIn('id',$arrHotContent)->orderby('status','DESC')->orderby('updated_at','DESC')->limit(10)->get();
-        $classicContent=Port::where('status','<>',0)->where('category_id',config('global.Classic Car'))->whereNotIn('id',$arrHotContent)->orderby('status','DESC')->orderby('updated_at','DESC')->limit(10)->get();
+        $muscleContent=Port::where('status','<>',0)->where('category_id',config('global.MuscleCar'))->whereNotIn('id',$arrHotContent)->orderby('status','DESC')->orderby('updated_at','DESC')->limit(10)->get();
+        $classicContent=Port::where('status','<>',0)->where('category_id',config('global.ClassicCar'))->whereNotIn('id',$arrHotContent)->orderby('status','DESC')->orderby('updated_at','DESC')->limit(10)->get();
         return view('client.home')->with(['hotContent'=>$hotContent,'muscleContent'=>$muscleContent,'classicContent'=>$classicContent]);
     }
     public function about(){
@@ -54,13 +54,13 @@ class HomeController extends Controller
     }
     public function musclePort(){
 
-        $list=Port::where('status','<>',0)->where('category_id',config('global.Muscle Car'))->orderby('status','DESC')->orderby('updated_at','DESC')->paginate(7);
+        $list=Port::where('status','<>',0)->where('category_id',config('global.MuscleCar'))->orderby('status','DESC')->orderby('updated_at','DESC')->paginate(7);
         $listPortRef=PortRef::where('status',1)->orderby('created_at','DESC')->limit(7)->get();
         return view('client.healthPort')->with(['list'=>$list,'listPortRef'=>$listPortRef]);
     }
     public function classicPort(){
 
-        $list=Port::where('status','<>',0)->where('category_id',config('global.Classic Car'))->orderby('status','DESC')->orderby('updated_at','DESC')->paginate(7);
+        $list=Port::where('status','<>',0)->where('category_id',config('global.ClassicCar'))->orderby('status','DESC')->orderby('updated_at','DESC')->paginate(7);
         $listPortRef=PortRef::where('status',1)->orderby('created_at','DESC')->limit(7)->get();
         return view('client.healthPort')->with(['list'=>$list,'listPortRef'=>$listPortRef]);
     }
