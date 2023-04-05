@@ -58,6 +58,18 @@
                     </iframe>
                     @endif
                     <h5>{{$port->short_content}}</h5>
+                    <script type="text/javascript">
+                        amzn_assoc_tracking_id = "ntp011095-20";
+                        amzn_assoc_ad_mode = "manual";
+                        amzn_assoc_ad_type = "smart";
+                        amzn_assoc_marketplace = "amazon";
+                        amzn_assoc_region = "US";
+                        amzn_assoc_design = "enhanced_links";
+                        amzn_assoc_asins = "B001AYQ3H4";
+                        amzn_assoc_placement = "adunit";
+                        amzn_assoc_linkid = "38fe1ce38b08bcf1e45d465db3546a87";
+                        </script>
+                        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
                     <div class="portContentDetailPage">
                         {!! $port->content !!}
                     </div>
