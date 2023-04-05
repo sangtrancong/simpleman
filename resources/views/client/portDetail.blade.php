@@ -58,18 +58,7 @@
                     </iframe>
                     @endif
                     <h5>{{$port->short_content}}</h5>
-                    <script type="text/javascript">
-                        amzn_assoc_tracking_id = "ntp011095-20";
-                        amzn_assoc_ad_mode = "manual";
-                        amzn_assoc_ad_type = "smart";
-                        amzn_assoc_marketplace = "amazon";
-                        amzn_assoc_region = "US";
-                        amzn_assoc_design = "enhanced_links";
-                        amzn_assoc_asins = "B001AYQ3H4";
-                        amzn_assoc_placement = "adunit";
-                        amzn_assoc_linkid = "38fe1ce38b08bcf1e45d465db3546a87";
-                        </script>
-                        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+                   <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=ntp011095-20&language=en_US&marketplace=amazon&region=US&placement=B0B59WSTPZ&asins=B0B59WSTPZ&linkId=9116ef1e3598cf786edefbc677d4a719&show_border=true&link_opens_in_new_window=true"></iframe>
                     <div class="portContentDetailPage">
                         {!! $port->content !!}
                     </div>
